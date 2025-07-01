@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom selection color */
+::selection {
+  background-color: #22c55e20;
+  color: #166534;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, [role="button"], input, textarea {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Interactive link styles */
+a {
+  @apply relative text-green-700 hover:text-green-800;
+}
+
+a::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-green-700 transition-all duration-300;
+}
+
+a:hover::after {
+  @apply w-full;
+}
+
+/* Button hover effects */
+button, [role="button"] {
+  @apply hover:shadow-md hover:-translate-y-0.5 active:translate-y-0;
+}
+
+/* Card hover effects */
+.card {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+/* Input focus styles */
+input:focus, textarea:focus {
+  @apply outline-none ring-2 ring-green-500/50 ring-offset-2;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-green-500/30 rounded-full hover:bg-green-500/50 transition-colors;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-800;
+}
+
+/* Hover gradient effect */
+.hover-gradient {
+  @apply relative overflow-hidden;
+}
+
+.hover-gradient::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-green-500/0 via-green-500/10 to-green-500/0;
+  transform: translateX(-100%);
+  transition: transform 0.6s ease-in-out;
+}
+
+.hover-gradient:hover::before {
+  transform: translateX(100%);
+}
+
+/* Interactive card with border animation */
+.interactive-card {
+  @apply relative p-4 rounded-lg border border-gray-200 hover:border-green-500/50 transition-all duration-300;
+}
+
+.interactive-card::before {
+  content: '';
+  @apply absolute inset-0 rounded-lg bg-gradient-to-r from-green-500/0 via-green-500/5 to-green-500/0 opacity-0 transition-opacity duration-300;
+}
+
+.interactive-card:hover::before {
+  @apply opacity-100;
+}
+
+/* Custom focus ring for accessibility */
+*:focus-visible {
+  @apply outline-none ring-2 ring-green-500 ring-offset-2;
+}
+
+/* Smooth page transitions */
+.page-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Loading animation */
+.loading-dot {
+  @apply w-2 h-2 bg-green-500 rounded-full animate-bounce;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+} 

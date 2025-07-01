@@ -1,0 +1,84 @@
+<header [ngClass]="{'hidden': isHeaderHidden}">
+  <nav class="fixed w-full z-50 bg-[var(--bg-primary)] backdrop-blur-sm overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20">
+        <div class="flex items-center">
+          <a href="#" class="text-xl font-bold text-green-400 hover:text-green-300 transition-colors">
+            <img src="/assets/logo.png" alt="logo" class="h-8 w-8" />
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#" class="nav-link" data-aos="fade-down" data-aos-delay="100"><span
+              class="text-green-400 mr-1"></span>Home</a>
+          <a href="#experience" class="nav-link" data-aos="fade-down" data-aos-delay="200"><span
+              class="text-green-400 mr-1"></span>Experience</a>
+          <a href="#projects" class="nav-link" data-aos="fade-down" data-aos-delay="300"><span
+              class="text-green-400 mr-1"></span>Projects</a>
+          <a href="#contact" class="nav-link" data-aos="fade-down" data-aos-delay="500"><span
+              class="text-green-400 mr-1"></span>Contact</a>
+          <button (click)="toggleTheme()" class="p-2 rounded-lg transition-colors hover:bg-green-400/10" aria-label="Toggle theme">
+            <svg *ngIf="isDarkTheme" class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <svg *ngIf="!isDarkTheme" class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden flex items-center p-2 rounded-lg transition-colors" (click)="toggleMenu()"
+          [attr.aria-label]="isMenuOpen ? 'Close menu' : 'Open menu'">
+          <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path *ngIf="!isMenuOpen" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+            <path *ngIf="isMenuOpen" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Sidebar -->
+    <div class="md:hidden">
+      <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+        [ngClass]="{'opacity-100 visible': isMenuOpen, 'opacity-0 invisible': !isMenuOpen}" (click)="toggleMenu()">
+      </div>
+
+      <div
+        class="fixed right-0 top-0 w-[min(75vw,320px)] h-full z-50 bg-[var(--bg-primary)] shadow-xl transform transition-all duration-300"
+        [ngClass]="{'translate-x-0': isMenuOpen, 'translate-x-full': !isMenuOpen}">
+
+        <!-- Close Button -->
+        <div class="flex justify-between items-center px-6 py-4 border-b border-[var(--text-secondary)]">
+          <span class="text-lg font-semibold text-[var(--text-primary)]">Menu</span>
+          <button (click)="toggleMenu()" aria-label="Close menu"
+            class="p-2 text-green-400 hover:text-green-300 rounded-lg transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Links -->
+        <div class="flex flex-col p-8 space-y-6 bg-[var(--bg-primary)]">
+          <a href="#" class="nav-link" (click)="toggleMenu()"><span class="text-green-400 mr-1"></span>Home</a>
+          <a href="#experience" class="nav-link" (click)="toggleMenu()"><span
+              class="text-green-400 mr-1"></span>Experience</a>
+          <a href="#projects" class="nav-link" (click)="toggleMenu()"><span
+              class="text-green-400 mr-1"></span>Projects</a>
+          <a href="#contact" class="nav-link" (click)="toggleMenu()"><span
+              class="text-green-400 mr-1"></span>Contact</a>
+          <button (click)="toggleTheme(); toggleMenu()" class="flex items-center space-x-2 nav-link">
+            <span class="text-green-400 mr-1"></span>
+            <span>{{ isDarkTheme ? 'Light Mode' : 'Dark Mode' }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
