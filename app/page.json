@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "eyebrow": "Hi, I am",
+    "name": "Ankush Sinha",
+    "tagline": "Building the web, better.",
+    "description": "Innovating the web with purpose and precision. As a full-stack engineer, I create accessible, user-friendly digital experiences that leave a lasting impact.",
+    "contactLink": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": [
+      "Hi there!, I'm Ankush Sinha, a full-stack Developer specializing in Next, Node and MongoDB. My passion lies in developing efficient web applications, managing SQL and NoSQL databases, and ensuring seamless deployment. I am committed to creating dynamic, scalable, and user-centric web applications using modern technologies.",
+      "Looking forward to sharpening my skills in a challenging environment. I guarantee enthusiasm in work and fulfilling my projects with inexpressible effort."
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "role": "Data Engineer",
+    "company": "Chola MS",
+    "dates": "March 2025 - Present",
+    "responsibilities": [
+      "Gaining hands-on experience in real-world data engineering processes, including data cleaning, transformation, and pipeline design.",
+      "Developing core Python programming skills, with a focus on data manipulation using libraries like Pandas, NumPy, and Matplotlib.",
+      "Building a solid understanding of statistical concepts and probabilistic models to support data-driven decision making.",
+      "Exploring tools and concepts essential for data engineering and data science, including SQL, data wrangling, and exploratory data analysis (EDA)."
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": [
+      {
+        "title": "Front-end",
+        "skills": [
+          { "name": "Angular", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angular/angular-original.svg" },
+          { "name": "HTML", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg" },
+          { "name": "CSS", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg" },
+          { "name": "Angular Material", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angularmaterial/angularmaterial-original.svg" },
+          { "name": "Bootstrap", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg" },
+          { "name": "JavaScript", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" },
+          { "name": "TypeScript", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg" },
+          { "name": "Tailwind", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/tailwindcss/tailwindcss-original.svg" }
+        ]
+      },
+      {
+        "title": "Back-end",
+        "skills": [
+          { "name": "C#", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/csharp/csharp-original.svg" },
+          { "name": ".Net", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/dotnetcore/dotnetcore-original.svg" },
+          { "name": "Python", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" },
+          { "name": "Entity Framework", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" },
+          { "name": "Node.js", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg" },
+          { "name": "Express.js", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/express/express-original.svg", "invert": true },
+          { "name": "Flask", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/flask/flask-original.svg", "invert": true }
+        ]
+      },
+      {
+        "title": "Database",
+        "skills": [
+          { "name": "MS SQL", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" },
+          { "name": "MongoDB", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg" },
+          { "name": "PostgreSQL", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postgresql/postgresql-original.svg" },
+          { "name": "MySQL", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg" }
+        ]
+      },
+      {
+        "title": "Ops",
+        "skills": [
+          { "name": "Git", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg" },
+          { "name": "Docker", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/docker/docker-original.svg" },
+          { "name": "AWS", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+          { "name": "Vercel", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vercel/vercel-original.svg", "invert": true },
+          { "name": "Netlify", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/netlify/netlify-original.svg" },
+          { "name": "Railway", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/railway/railway-original.svg" },
+          { "name": "CI/CD", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/githubactions/githubactions-original.svg" },
+          { "name": "Nginx", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nginx/nginx-original.svg" }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "What's Next?",
+    "title": "Get In Touch",
+    "description": "Let’s Chat! Whether you have a question, a project idea, or just want to connect, I’m always happy to hear from you. Drop me a message, and I’ll be in touch soon!"
+  }
+}

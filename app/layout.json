@@ -1,0 +1,33 @@
+{
+  "metadataBase": "https://darshanbhuva.vercel.app",
+  "title": "Ankush Sinha | Software Developer",
+  "description": "Ankush Sinha is a software developer specializing in creating dynamic, scalable, and user-centric web applications using modern technologies.",
+  "keywords": [
+    "Ankush Sinha",
+    "portfolio",
+    "web developer",
+    "Next.js developer",
+    "frontend development",
+    "JavaScript",
+    "responsive design"
+  ],
+  "author": "Ankush Sinha",
+  "robots": "index, follow",
+  "canonical": "/",
+  "openGraph": {
+    "title": "Ankush Sinha",
+    "description": "Ankush Sinha is a software developer specializing in creating dynamic, scalable, and user-centric web applications using modern technologies.",
+    "url": "/",
+    "type": "website",
+    "image": "/assets/logo.jpg"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Ankush Sinha",
+    "description": "Ankush Sinha is a software developer specializing in creating dynamic, scalable, and user-centric web applications using modern technologies.",
+    "image": "/assets/logo.jpg"
+  },
+  "icon": "/assets/favicon.ico",
+  "googleSiteVerification": "vzGKQl03I1GxMn-jvI64FLQin8zbx_0OeTc-_WzD9B0",
+  "googleAnalyticsId": "G-5MGTQMM8M5"
+}

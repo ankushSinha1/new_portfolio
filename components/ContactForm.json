@@ -1,0 +1,24 @@
+{
+  "fields": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Name",
+      "requiredMessage": "Name is required."
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email",
+      "requiredMessage": "Valid email is required."
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Message",
+      "requiredMessage": "Message is required."
+    }
+  },
+  "submit": "Say Hello",
+  "sending": "Sending…",
+  "successFallback": "Your message has been sent.",
+  "errorFallback": "Something went wrong. Please try again later.",
+  "httpError": "Unable to send your message (HTTP {status})."
+}

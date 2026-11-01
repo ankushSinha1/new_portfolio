@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #43464f;
+  --white: #e6f1ff;
+  --green: #32cc44;
+  --bg-primary: #18212e;
+  --bg-secondary: #112240;
+  --text-primary: #e2e8fd;
+  --text-secondary: #a5b0d1;
+}
+
+:root.light-theme {
+  --slate: #4a5568;
+  --light-slate: #2d3748;
+  --lightest-slate: #1a202c;
+  --white: #2d3748;
+  --green: #21a833;
+  --bg-primary: #ffffff;
+  --bg-secondary: #ffffff;
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--slate) var(--bg-primary);
+  scrollbar-width: thin;
+  background-color: var(--bg-primary);
+  color: var(--slate);
+}
+
+body {
+  @apply antialiased;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #22c55e20;
+  color: #166534;
+}
+
+a,
+button,
+input,
+textarea {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+a {
+  @apply relative text-green-700 hover:text-green-800;
+}
+
+a::after {
+  content: "";
+  @apply absolute bottom-0 left-0 h-0.5 w-0 bg-green-700 transition-all duration-300;
+}
+
+a:hover::after {
+  @apply w-full;
+}
+
+button {
+  @apply hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
+}
+
+input:focus,
+textarea:focus {
+  @apply outline-none ring-2 ring-green-500/50 ring-offset-2;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-green-500/30 transition-colors hover:bg-green-500/50;
+}
+
+*:focus-visible {
+  @apply outline-none ring-2 ring-green-500 ring-offset-2;
+}
+
+.text-slate {
+  color: var(--slate);
+}
+
+.nav-link {
+  @apply relative text-sm font-medium text-slate transition-all duration-300 hover:text-green-400;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute -bottom-1 left-0 h-[2px] w-0 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.section-container {
+  @apply mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8;
+}
+
+.section-title {
+  @apply mb-8 flex items-center text-2xl font-bold text-green-400;
+}
+
+.section-title::before {
+  content: "▹";
+  @apply mr-2 text-xl text-green-400;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.2em;
+  font-family: monospace;
+}
+
+.animate-gradient {
+  animation: gradient 15s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-3000 {
+  animation-delay: 3s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-5000 {
+  animation-delay: 5s;
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -20px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
