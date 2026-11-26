@@ -1,85 +1,107 @@
 {
   "hero": {
-    "eyebrow": "Hi, I am",
+    "eyebrow": "Data Engineer · 1.5 years' experience",
     "name": "Ankush Sinha",
-    "tagline": "Building the web, better.",
-    "description": "Innovating the web with purpose and precision. As a full-stack engineer, I create accessible, user-friendly digital experiences that leave a lasting impact.",
+    "tagline": "Building data pipelines that scale.",
+    "description": "I build and optimize data pipelines with AWS, Airflow, PySpark, and SQL. I’ve worked on large-scale migrations, incremental processing, and data quality for PostgreSQL data marts holding over 1 billion historical records.",
     "contactLink": "Get In Touch"
   },
   "about": {
     "title": "About Me",
     "paragraphs": [
-      "Hi there!, I'm Ankush Sinha, a full-stack Developer specializing in Next, Node and MongoDB. My passion lies in developing efficient web applications, managing SQL and NoSQL databases, and ensuring seamless deployment. I am committed to creating dynamic, scalable, and user-centric web applications using modern technologies.",
-      "Looking forward to sharpening my skills in a challenging environment. I guarantee enthusiasm in work and fulfilling my projects with inexpressible effort."
+      "I’m a Data Engineer at Chola MS General Insurance, working with AWS, Apache Airflow, PySpark, and SQL to build and improve production data workflows. My work spans large-scale data migration, configurable incremental loads, data quality, and query performance.",
+      "I enjoy turning complex data movement into reliable, measurable systems—from migrating more than a billion historical records to scaling PySpark workloads. I’m interested in opportunities to keep building dependable data platforms and pipelines."
     ]
   },
   "experience": {
     "title": "Experience",
     "role": "Data Engineer",
-    "company": "Chola MS",
-    "dates": "March 2025 - Present",
-    "responsibilities": [
-      "Gaining hands-on experience in real-world data engineering processes, including data cleaning, transformation, and pipeline design.",
-      "Developing core Python programming skills, with a focus on data manipulation using libraries like Pandas, NumPy, and Matplotlib.",
-      "Building a solid understanding of statistical concepts and probabilistic models to support data-driven decision making.",
-      "Exploring tools and concepts essential for data engineering and data science, including SQL, data wrangling, and exploratory data analysis (EDA)."
+    "company": "Chola MS General Insurance Pvt Ltd · Chennai",
+    "dates": "July 2025 – Present",
+    "projects": [
+      {
+        "name": "Customer360 (CX360)",
+        "highlights": [
+          "Unified data from 7–8 sources in PostgreSQL on AWS RDS, migrating more than 1 billion records across 18 years; each table completed loading in under 30 minutes.",
+          "Built an automated, parallel Airflow and S3 pipeline from Amazon Redshift to PostgreSQL, reducing costs by 40% versus the previous approach.",
+          "Implemented validated, safe table swaps and JSON-configured PySpark Glue incremental loads with watermarking, audit-column filters, and key-based delete-and-insert: zero duplicate records across 20 tables and 40% less production recovery effort.",
+          "Reworked SQL joins, CTEs, and filter placement to reduce end-to-end runtime from 2.5 hours to 50 minutes.",
+          "Optimized the DLID framework from Python to PySpark, scaling throughput from 8 million rows per hour to 100 million rows in 40 minutes."
+        ]
+      },
+      {
+        "name": "Customer Satisfaction (CSAT)",
+        "highlights": [
+          "Designed target tables from business requirements, validated primary-key uniqueness, and worked with business users to raise non-null data coverage from 60% to 90%."
+        ]
+      },
+      {
+        "name": "Inbound Analysis",
+        "highlights": [
+          "Automated S3 CSV ingestion with Airflow, applied business-rule transformations, and integrated existing database data into the same workflow—eliminating manual cleaning and reducing development effort by 40%."
+        ]
+      },
+      {
+        "name": "Financial Information Provider (FIP)",
+        "highlights": [
+          "Built source-to-staging and staging-to-target ETL pipelines with watermark-based incremental processing, reducing debugging effort by 20%.",
+          "Created materialized views that cut API data retrieval from 200 ms to 10 ms and enabled parallel reads and writes to reduce processing time by 40%.",
+          "Developed a Python and AWS Glue DLID framework that generates a unique customer identifier used across digital applications; targeted historical reads cut incremental runtime by 70%."
+        ]
+      }
     ]
   },
   "skills": {
     "title": "Skills",
     "groups": [
       {
-        "title": "Front-end",
+        "title": "Languages",
         "skills": [
-          { "name": "Angular", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angular/angular-original.svg" },
-          { "name": "HTML", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg" },
-          { "name": "CSS", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg" },
-          { "name": "Angular Material", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angularmaterial/angularmaterial-original.svg" },
-          { "name": "Bootstrap", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg" },
-          { "name": "JavaScript", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" },
-          { "name": "TypeScript", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg" },
-          { "name": "Tailwind", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/tailwindcss/tailwindcss-original.svg" }
+          "Python",
+          "SQL",
+          "PySpark"
         ]
       },
       {
-        "title": "Back-end",
+        "title": "Pipelines & Orchestration",
         "skills": [
-          { "name": "C#", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/csharp/csharp-original.svg" },
-          { "name": ".Net", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/dotnetcore/dotnetcore-original.svg" },
-          { "name": "Python", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" },
-          { "name": "Entity Framework", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" },
-          { "name": "Node.js", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg" },
-          { "name": "Express.js", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/express/express-original.svg", "invert": true },
-          { "name": "Flask", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/flask/flask-original.svg", "invert": true }
+          "Apache Airflow",
+          "AWS Glue",
+          "ETL"
         ]
       },
       {
-        "title": "Database",
+        "title": "Data Stores",
         "skills": [
-          { "name": "MS SQL", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" },
-          { "name": "MongoDB", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg" },
-          { "name": "PostgreSQL", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postgresql/postgresql-original.svg" },
-          { "name": "MySQL", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg" }
+          "Amazon Redshift",
+          "PostgreSQL (Aurora/RDS)",
+          "Amazon S3",
+          "Athena"
         ]
       },
       {
-        "title": "Ops",
+        "title": "Cloud & Tools",
         "skills": [
-          { "name": "Git", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg" },
-          { "name": "Docker", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/docker/docker-original.svg" },
-          { "name": "AWS", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
-          { "name": "Vercel", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vercel/vercel-original.svg", "invert": true },
-          { "name": "Netlify", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/netlify/netlify-original.svg" },
-          { "name": "Railway", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/railway/railway-original.svg" },
-          { "name": "CI/CD", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/githubactions/githubactions-original.svg" },
-          { "name": "Nginx", "logo": "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nginx/nginx-original.svg" }
+          "AWS EC2",
+          "Secrets Manager",
+          "CodeCommit",
+          "Git"
         ]
       }
     ]
   },
+  "education": {
+    "title": "Education",
+    "institution": "IIITDM Kancheepuram",
+    "degree": "B.Tech in Electronics and Communication Engineering",
+    "dates": "December 2021 – May 2025",
+    "gpa": "8.08 / 10.0"
+  },
   "contact": {
     "eyebrow": "What's Next?",
     "title": "Get In Touch",
-    "description": "Let’s Chat! Whether you have a question, a project idea, or just want to connect, I’m always happy to hear from you. Drop me a message, and I’ll be in touch soon!"
+    "description": "Interested in working together or discussing data engineering? Feel free to get in touch.",
+    "email": "sinha.ankush5454@gmail.com",
+    "phone": "+91 84179 27972"
   }
 }

@@ -6,48 +6,36 @@ import Background from "../components/Background";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
+import content from "./layout.json";
 
 const analyticsId =
   process.env.NODE_ENV === "production"
-    ? process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-5MGTQMM8M5"
+    ? process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || content.googleAnalyticsId
     : "";
 
 export const metadata = {
-  metadataBase: new URL("https://darshanbhuva.vercel.app"),
-  title: "Ankush Sinha | Software Developer",
-  description:
-    "Ankush Sinha is a software developer specializing in creating dynamic, scalable, and user-centric web applications using modern technologies.",
-  keywords: [
-    "Ankush Sinha",
-    "portfolio",
-    "web developer",
-    "Next.js developer",
-    "frontend development",
-    "JavaScript",
-    "responsive design",
-  ],
-  authors: [{ name: "Ankush Sinha" }],
-  robots: "index, follow",
-  alternates: { canonical: "/" },
+  metadataBase: new URL(content.metadataBase),
+  title: content.title,
+  description: content.description,
+  keywords: content.keywords,
+  authors: [{ name: content.author }],
+  robots: content.robots,
+  alternates: { canonical: content.canonical },
   openGraph: {
-    title: "Ankush Sinha",
-    description:
-      "Ankush Sinha is a software developer specializing in creating dynamic, scalable, and user-centric web applications using modern technologies.",
-    url: "/",
-    type: "website",
-    images: ["/assets/logo.jpg"],
+    title: content.openGraph.title,
+    description: content.openGraph.description,
+    url: content.openGraph.url,
+    type: content.openGraph.type,
+    images: [content.openGraph.image],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Ankush Sinha",
-    description:
-      "Ankush Sinha is a software developer specializing in creating dynamic, scalable, and user-centric web applications using modern technologies.",
-    images: ["/assets/logo.jpg"],
+    card: content.twitter.card,
+    title: content.twitter.title,
+    description: content.twitter.description,
+    images: [content.twitter.image],
   },
-  icons: { icon: "/assets/favicon.ico" },
-  verification: {
-    google: "vzGKQl03I1GxMn-jvI64FLQin8zbx_0OeTc-_WzD9B0",
-  },
+  icons: { icon: content.icon },
+  verification: { google: content.googleSiteVerification },
 };
 
 export default function RootLayout({ children }) {

@@ -1,8 +1,9 @@
 import Projects from "../../components/Projects";
+import content from "./page.json";
 
 export const metadata = {
-  title: "Projects | Ankush Sinha",
-  description: "Selected software development projects by Ankush Sinha.",
+  title: content.title,
+  description: content.description,
 };
 
 export default function ProjectPage() {

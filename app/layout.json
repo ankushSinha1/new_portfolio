@@ -1,22 +1,26 @@
 {
   "metadataBase": "https://darshanbhuva.vercel.app",
-  "title": "Ankush Sinha | Software Developer",
-  "description": "Ankush Sinha is a software developer specializing in creating dynamic, scalable, and user-centric web applications using modern technologies.",
+  "title": "Ankush Sinha | Data Engineer",
+  "description": "Data Engineer with 1.5 years of experience building AWS, Airflow, PySpark, and SQL pipelines, including migrations of over 1 billion historical records.",
   "keywords": [
     "Ankush Sinha",
     "portfolio",
-    "web developer",
-    "Next.js developer",
-    "frontend development",
-    "JavaScript",
-    "responsive design"
+    "data engineer",
+    "Python",
+    "SQL",
+    "PySpark",
+    "Apache Airflow",
+    "AWS Glue",
+    "Amazon Redshift",
+    "PostgreSQL",
+    "data pipelines"
   ],
   "author": "Ankush Sinha",
   "robots": "index, follow",
   "canonical": "/",
   "openGraph": {
     "title": "Ankush Sinha",
-    "description": "Ankush Sinha is a software developer specializing in creating dynamic, scalable, and user-centric web applications using modern technologies.",
+    "description": "Data Engineer with 1.5 years of experience building AWS, Airflow, PySpark, and SQL pipelines, including migrations of over 1 billion historical records.",
     "url": "/",
     "type": "website",
     "image": "/assets/logo.jpg"
@@ -24,7 +28,7 @@
   "twitter": {
     "card": "summary_large_image",
     "title": "Ankush Sinha",
-    "description": "Ankush Sinha is a software developer specializing in creating dynamic, scalable, and user-centric web applications using modern technologies.",
+    "description": "Data Engineer with 1.5 years of experience building AWS, Airflow, PySpark, and SQL pipelines, including migrations of over 1 billion historical records.",
     "image": "/assets/logo.jpg"
   },
   "icon": "/assets/favicon.ico",

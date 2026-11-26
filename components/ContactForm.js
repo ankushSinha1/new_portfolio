@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import content from "./ContactForm.json";
 
 export default function ContactForm() {
   const [isSending, setIsSending] = useState(false);
@@ -31,18 +32,19 @@ export default function ContactForm() {
 
       if (!response.ok) {
         throw new Error(
-          result?.message || `Unable to send your message (HTTP ${response.status}).`,
+          result?.message ||
+            content.httpError.replace("{status}", response.status),
         );
       }
 
-      setMessage(result?.message || "Your message has been sent.");
+      setMessage(result?.message || content.successFallback);
       form.reset();
     } catch (error) {
       setIsError(true);
       setMessage(
         error instanceof Error
           ? error.message
-          : "Something went wrong. Please try again later.",
+          : content.errorFallback,
       );
     } finally {
       setIsSending(false);
@@ -59,32 +61,53 @@ export default function ContactForm() {
       <div>
         <input
           type="text"
-          placeholder="Name"
+          aria-label={content.fields.name.label}
+          placeholder={content.fields.name.placeholder}
           id="name"
           name="name"
           autoComplete="name"
           required
+          onInvalid={(event) =>
+            event.currentTarget.setCustomValidity(
+              content.fields.name.requiredMessage,
+            )
+          }
+          onInput={(event) => event.currentTarget.setCustomValidity("")}
           className="w-full rounded border border-[var(--text-secondary)] px-4 py-3 text-slate"
         />
       </div>
       <div>
         <input
           type="email"
-          placeholder="Email"
+          aria-label={content.fields.email.label}
+          placeholder={content.fields.email.placeholder}
           id="email"
           name="email"
           autoComplete="email"
           required
+          onInvalid={(event) =>
+            event.currentTarget.setCustomValidity(
+              content.fields.email.requiredMessage,
+            )
+          }
+          onInput={(event) => event.currentTarget.setCustomValidity("")}
           className="w-full rounded border border-[var(--text-secondary)] px-4 py-3 text-slate"
         />
       </div>
       <div>
         <textarea
           rows="4"
-          placeholder="Message"
+          aria-label={content.fields.message.label}
+          placeholder={content.fields.message.placeholder}
           id="message"
           name="message"
           required
+          onInvalid={(event) =>
+            event.currentTarget.setCustomValidity(
+              content.fields.message.requiredMessage,
+            )
+          }
+          onInput={(event) => event.currentTarget.setCustomValidity("")}
           className="w-full rounded border border-[var(--text-secondary)] px-4 py-3 text-slate"
         />
       </div>
@@ -93,7 +116,7 @@ export default function ContactForm() {
         disabled={isSending}
         className="rounded border border-green-400 px-8 py-4 text-green-400 transition-colors hover:bg-green-400/10 disabled:cursor-not-allowed disabled:opacity-60"
       >
-        {isSending ? "Sending…" : "Say Hello"}
+        {isSending ? content.sending : content.submit}
       </button>
       {message ? (
         <p
