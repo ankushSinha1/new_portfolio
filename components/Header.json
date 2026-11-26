@@ -1,0 +1,27 @@
+{
+  "homeLabel": "Ankush Sinha home",
+  "links": [
+    { "label": "Home", "href": "/" },
+    { "label": "Experience", "href": "/#experience" },
+    { "label": "Education", "href": "/#education" },
+    { "label": "Projects", "href": "/#projects" },
+    { "label": "Contact", "href": "/#contact" }
+  ],
+  "themeLabels": {
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode"
+  },
+  "menu": {
+    "open": "Open menu",
+    "close": "Close menu",
+    "title": "Menu"
+  },
+  "icons": {
+    "open": "☰",
+    "close": "×",
+    "lightTheme": "☼",
+    "darkTheme": "☾"
+  }
+}

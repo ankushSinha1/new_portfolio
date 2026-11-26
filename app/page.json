@@ -1,0 +1,107 @@
+{
+  "hero": {
+    "eyebrow": "Data Engineer · 1.5 years' experience",
+    "name": "Ankush Sinha",
+    "tagline": "Building data pipelines that scale.",
+    "description": "I build and optimize data pipelines with AWS, Airflow, PySpark, and SQL. I’ve worked on large-scale migrations, incremental processing, and data quality for PostgreSQL data marts holding over 1 billion historical records.",
+    "contactLink": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": [
+      "I’m a Data Engineer at Chola MS General Insurance, working with AWS, Apache Airflow, PySpark, and SQL to build and improve production data workflows. My work spans large-scale data migration, configurable incremental loads, data quality, and query performance.",
+      "I enjoy turning complex data movement into reliable, measurable systems—from migrating more than a billion historical records to scaling PySpark workloads. I’m interested in opportunities to keep building dependable data platforms and pipelines."
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "role": "Data Engineer",
+    "company": "Chola MS General Insurance Pvt Ltd · Chennai",
+    "dates": "July 2025 – Present",
+    "projects": [
+      {
+        "name": "Customer360 (CX360)",
+        "highlights": [
+          "Unified data from 7–8 sources in PostgreSQL on AWS RDS, migrating more than 1 billion records across 18 years; each table completed loading in under 30 minutes.",
+          "Built an automated, parallel Airflow and S3 pipeline from Amazon Redshift to PostgreSQL, reducing costs by 40% versus the previous approach.",
+          "Implemented validated, safe table swaps and JSON-configured PySpark Glue incremental loads with watermarking, audit-column filters, and key-based delete-and-insert: zero duplicate records across 20 tables and 40% less production recovery effort.",
+          "Reworked SQL joins, CTEs, and filter placement to reduce end-to-end runtime from 2.5 hours to 50 minutes.",
+          "Optimized the DLID framework from Python to PySpark, scaling throughput from 8 million rows per hour to 100 million rows in 40 minutes."
+        ]
+      },
+      {
+        "name": "Customer Satisfaction (CSAT)",
+        "highlights": [
+          "Designed target tables from business requirements, validated primary-key uniqueness, and worked with business users to raise non-null data coverage from 60% to 90%."
+        ]
+      },
+      {
+        "name": "Inbound Analysis",
+        "highlights": [
+          "Automated S3 CSV ingestion with Airflow, applied business-rule transformations, and integrated existing database data into the same workflow—eliminating manual cleaning and reducing development effort by 40%."
+        ]
+      },
+      {
+        "name": "Financial Information Provider (FIP)",
+        "highlights": [
+          "Built source-to-staging and staging-to-target ETL pipelines with watermark-based incremental processing, reducing debugging effort by 20%.",
+          "Created materialized views that cut API data retrieval from 200 ms to 10 ms and enabled parallel reads and writes to reduce processing time by 40%.",
+          "Developed a Python and AWS Glue DLID framework that generates a unique customer identifier used across digital applications; targeted historical reads cut incremental runtime by 70%."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": [
+      {
+        "title": "Languages",
+        "skills": [
+          "Python",
+          "SQL",
+          "PySpark"
+        ]
+      },
+      {
+        "title": "Pipelines & Orchestration",
+        "skills": [
+          "Apache Airflow",
+          "AWS Glue",
+          "ETL"
+        ]
+      },
+      {
+        "title": "Data Stores",
+        "skills": [
+          "Amazon Redshift",
+          "PostgreSQL (Aurora/RDS)",
+          "Amazon S3",
+          "Athena"
+        ]
+      },
+      {
+        "title": "Cloud & Tools",
+        "skills": [
+          "AWS EC2",
+          "Secrets Manager",
+          "CodeCommit",
+          "Git"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "institution": "IIITDM Kancheepuram",
+    "degree": "B.Tech in Electronics and Communication Engineering",
+    "dates": "December 2021 – May 2025",
+    "gpa": "8.08 / 10.0"
+  },
+  "contact": {
+    "eyebrow": "What's Next?",
+    "title": "Get In Touch",
+    "description": "Interested in working together or discussing data engineering? Feel free to get in touch.",
+    "email": "sinha.ankush5454@gmail.com",
+    "phone": "+91 84179 27972"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "socialLabel": "Social profiles",
+  "socialLinkLabel": "Visit Ankush's {name} profile",
+  "socialLinks": [
+    { "name": "GitHub", "href": "https://github.com/ankushSinha1" },
+    { "name": "LinkedIn", "href": "https://www.linkedin.com/in/ankushSinha1/" },
+    { "name": "LeetCode", "href": "https://leetcode.com/u/ankushSinha1" }
+  ],
+  "email": "sinha.ankush5454@gmail.com"
+}
